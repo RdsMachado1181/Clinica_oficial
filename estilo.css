@@ -1,0 +1,380 @@
+*
+{
+      margin:auto ;
+      padding: 0;
+     box-sizing: border-box;
+   
+}
+.root
+{
+      --color1:red;
+      --color2:blue;
+}
+body
+{
+      width: 1000px;
+      margin: auto;
+
+font-size: medium;
+color: rgb(144, 161, 161);
+background-color: rgb(255, 255, 255);
+font-family: Source Snas pro;
+
+}
+.rodape
+{
+margin: auto;
+padding: 15px;
+text-align: center;
+}
+
+/*-----------------------------------------------*/
+.rodape , .topo
+{
+background-color: rgb(24, 133, 96);
+}
+
+/*-----------------------------------------------*/
+.conteudo
+{
+      width: 100%;    
+      text-align: center;
+      display: inline;
+   
+    
+     
+}
+.topo
+{
+      max-width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+margin: auto;
+}
+.topo .link a
+{
+      padding: 0 10px;
+      color: white;
+      text-decoration :none ;
+}
+.imagem-fundo
+{
+
+      width: 100%;
+      height: 500px;
+      background-image: url(assets/recepcao2.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+       position: relative;
+            
+}
+.texto-imagem 
+{
+     
+      color: white;
+      position: absolute;
+     top: 100px;
+     left: 20px;
+     
+}
+.texto-imagem h1
+{
+text-align: left;
+font-size: 1.4em;
+}
+.foto-medico img
+{
+ width:200px;
+ height:200px;
+ float: left;
+}
+.conteudo  .texto-lista
+{
+      display: inline;
+      width: auto;
+     
+}
+/*------------------------------------------------------------*/
+.conteudo .conteudo-limitado , .texto-conteudo ,.texto-lista
+{
+      
+      background-color: rgb(255, 255, 255);
+}
+
+
+
+/*-------------------------------------------------------------*/
+.conteudo .conteudo-limitado p
+{
+    line-height: 1.9em;
+}
+.conteudo .conteudo-limitado p span 
+{
+      font-weight: bold;
+      color: black;
+}
+
+.conteudo .texto-lista , .lista, .conteudo-limitado 
+{
+      padding: 15px 0;
+}
+.conteudo .texto-lista, .conteudo-limitado
+{
+      font-family: arial;
+      
+}
+
+ .conteudo .texto-lista .lista 
+{
+list-style: inside;
+text-align: left;
+font-size: .9em;
+padding-left: 30px;
+
+}
+.conteudo .conteudo-limitado 
+{
+      max-width: 1000px;
+}
+
+
+/*------------------------------------------------------------*/
+
+.conteudo-limitado .container-box
+{
+      width: 100%;
+      height: auto;
+     padding: 20px;
+     padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+.conteudo-limitado .container-box .box
+{
+      width: 280px;
+      height: 250px;
+      padding: 20px 0 ;
+     
+     
+}
+.conteudo-limitado .container-box .box img
+{
+max-width: 100vw;
+max-height: 100vh;
+}
+/*-----------------------------------------------------------*/
+.container-box .box #descricao
+{
+     padding: 10px 0; 
+     box-shadow: 2px 2px 2px 2px gray;
+}
+.container-box .box #descricao a 
+{
+      text-decoration: none;
+      color: gray;
+}
+
+/*-----------------------------------------------------------*/
+.botao
+{
+      padding: 20px 0;
+}
+.texto-botao a
+{
+text-decoration: none;
+color: white;
+background-color: rgb(42, 139, 107);
+padding: 10px;
+}
+
+.conteudo .mapa iframe
+{
+    max-width: 100vw;
+      padding: 10px;
+}
+
+
+/*--------------------------------------*/
+@media(min-width:320px) and (max-width:460px) 
+ {
+      body
+      {
+max-width: 100vw;
+box-sizing: border-box;
+font-size: 0.9em;
+      }
+    
+      .conteudo .topo
+      {
+             width: 100%;
+            display: inline-block;
+            padding-left: 20px;
+            
+      }
+      .conteudo .link{
+            padding: 10px 0;
+      } 
+      .conteudo .conteudo-limitado
+      {
+            font-size: .8em;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20 10px;
+      }
+      .topo .figure-topo
+      {
+            border-bottom: 2px solid gray;
+      } 
+      .texto-imagem 
+{
+  font-size: .9em;
+}
+
+.imagem-fundo
+{
+      width: 100%;
+      height: 250px;
+}
+.foto-medico img
+{
+display: none;
+}
+.texto-conteudo .container-box .box
+{
+      width: 280px;
+      height: 250px;
+     
+}
+.container-box .box img
+{
+width: 280px;
+height: 200px;
+}
+.conteudo .mapa iframe
+{
+     max-width: 100vw;
+     max-height:250px;
+      padding: 0 10px;
+}
+
+ }
+
+ @media(min-width:461px) and (max-width:768px) 
+ {
+      body
+      {
+max-width: 100vw;
+box-sizing: border-box;
+font-size: 0.9em;
+      }
+    .topo
+    {
+          padding: 0 5px;
+    }
+      .conteudo .foto-medico
+      {
+            display: none;
+           
+      } 
+      .texto-imagem 
+      {
+        font-size: 1.2em;
+        font-family: arial;
+      }
+      .imagem-fundo
+      {
+            width: 100vw;
+            height:400px;
+      }
+
+      .texto-conteudo .container-box
+      {
+            width: 100vw;
+            height:auto; 
+           
+            padding-bottom:50px ;
+display: flex;
+justify-content: space-between;
+align-items: center;
+      }
+      .texto-conteudo .container-box .box
+      {
+            width: 280px;
+            height: 250px;
+           
+      }
+      .container-box .box img
+      {
+      width: 280px;
+      height: 200px;
+      }
+
+
+ .texto-conteudo .container-box a
+ {
+      text-decoration: none;
+      color: gray;
+ }
+}
+@media(min-width:769px) and (max-width:1800px) 
+{
+      body
+      {
+max-width: 100vw;
+box-sizing: border-box;
+font-size: 1em;
+      }
+    
+      .conteudo .foto-medico
+      {
+         
+         float: left; 
+             
+      }
+      .texto-conteudo .container-box .box
+      {
+            width: 280px;
+            height: 250px;
+           
+      }
+      .container-box .box img
+      {
+      width: 280px;
+      height: 200px;
+      }
+      .conteudo .texto-lista
+      {
+            display: inline-block;
+             
+      }
+      .texto-conteudo .container-box
+{
+      width: 100vw;
+      height: auto;
+     padding: 20px;
+     padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+      .texto-conteudo .container-box .box
+{
+      width: 280px;
+      height: 250px;
+      padding: 20px 0 ;
+     
+     
+}
+.texto-conteudo .container-box .box img
+{
+max-width: 100vw;
+max-height: 100vh;
+}
+
+}
